@@ -15,6 +15,11 @@
 		46F82BFB2018C2B000FF15CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F82BF92018C2B000FF15CC /* LaunchScreen.storyboard */; };
 		46F82C062018C2B000FF15CC /* AESDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F82C052018C2B000FF15CC /* AESDemoTests.m */; };
 		46F82C112018C2B000FF15CC /* AESDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F82C102018C2B000FF15CC /* AESDemoUITests.m */; };
+		46F82C202018C32700FF15CC /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F82C1F2018C32700FF15CC /* NSData+AES256.m */; };
+		46F82C232018C4AE00FF15CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F82C222018C4AE00FF15CC /* Foundation.framework */; };
+		46F82C252018C52000FF15CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F82C242018C52000FF15CC /* UIKit.framework */; };
+		46F82C272018C78800FF15CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F82C262018C78800FF15CC /* CoreGraphics.framework */; };
+		46F82C2A2018C99800FF15CC /* NSString+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F82C292018C99800FF15CC /* NSString+AES256.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		46F82C0C2018C2B000FF15CC /* AESDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AESDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F82C102018C2B000FF15CC /* AESDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESDemoUITests.m; sourceTree = "<group>"; };
 		46F82C122018C2B000FF15CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F82C1E2018C32700FF15CC /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		46F82C1F2018C32700FF15CC /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		46F82C222018C4AE00FF15CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46F82C242018C52000FF15CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		46F82C262018C78800FF15CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46F82C282018C99800FF15CC /* NSString+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES256.h"; sourceTree = "<group>"; };
+		46F82C292018C99800FF15CC /* NSString+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES256.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F82C272018C78800FF15CC /* CoreGraphics.framework in Frameworks */,
+				46F82C252018C52000FF15CC /* UIKit.framework in Frameworks */,
+				46F82C232018C4AE00FF15CC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				46F82C042018C2B000FF15CC /* AESDemoTests */,
 				46F82C0F2018C2B000FF15CC /* AESDemoUITests */,
 				46F82BE92018C2B000FF15CC /* Products */,
+				46F82C212018C4AD00FF15CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +121,10 @@
 				46F82BEF2018C2B000FF15CC /* AppDelegate.m */,
 				46F82BF12018C2B000FF15CC /* ViewController.h */,
 				46F82BF22018C2B000FF15CC /* ViewController.m */,
+				46F82C1E2018C32700FF15CC /* NSData+AES256.h */,
+				46F82C1F2018C32700FF15CC /* NSData+AES256.m */,
+				46F82C282018C99800FF15CC /* NSString+AES256.h */,
+				46F82C292018C99800FF15CC /* NSString+AES256.m */,
 				46F82BF42018C2B000FF15CC /* Main.storyboard */,
 				46F82BF72018C2B000FF15CC /* Assets.xcassets */,
 				46F82BF92018C2B000FF15CC /* LaunchScreen.storyboard */,
@@ -138,6 +158,16 @@
 				46F82C122018C2B000FF15CC /* Info.plist */,
 			);
 			path = AESDemoUITests;
+			sourceTree = "<group>";
+		};
+		46F82C212018C4AD00FF15CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F82C262018C78800FF15CC /* CoreGraphics.framework */,
+				46F82C242018C52000FF15CC /* UIKit.framework */,
+				46F82C222018C4AE00FF15CC /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F82C2A2018C99800FF15CC /* NSString+AES256.m in Sources */,
 				46F82BF32018C2B000FF15CC /* ViewController.m in Sources */,
 				46F82BF02018C2B000FF15CC /* AppDelegate.m in Sources */,
+				46F82C202018C32700FF15CC /* NSData+AES256.m in Sources */,
 				46F82BED2018C2B000FF15CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

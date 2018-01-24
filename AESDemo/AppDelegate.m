@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "NSString+AES256.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString * test = @"170987350";
+    NSString * result = @"";
+    result = [test aes256_encrypt:@"1"];
+    NSLog(result);
+    NSString * result2=@"";
+    
+    result2 = [result aes256_decrypt:@"1"];
+    NSLog(@"解密");
+    NSLog(@"解密结束%@",result2);
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
